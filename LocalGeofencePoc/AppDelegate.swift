@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Roam
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        Roam.initialize("857c2112cc6f5a478c5a27ae93017648cfb51351a8b49c4bb9866569fd8e37e9")
         return true
     }
 

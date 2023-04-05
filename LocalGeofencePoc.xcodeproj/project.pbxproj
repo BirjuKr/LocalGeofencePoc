@@ -13,6 +13,7 @@
 		D622080C29DBDFC000579492 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D622080A29DBDFC000579492 /* Main.storyboard */; };
 		D622080E29DBDFC500579492 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D622080D29DBDFC500579492 /* Assets.xcassets */; };
 		D622081129DBDFC500579492 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D622080F29DBDFC500579492 /* LaunchScreen.storyboard */; };
+		D6AEAB0429DD3383004EE45A /* roam-ios in Frameworks */ = {isa = PBXBuildFile; productRef = D6AEAB0329DD3383004EE45A /* roam-ios */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6AEAB0429DD3383004EE45A /* roam-ios in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = LocalGeofencePoc;
+			packageProductDependencies = (
+				D6AEAB0329DD3383004EE45A /* roam-ios */,
+			);
 			productName = LocalGeofencePoc;
 			productReference = D622080129DBDFC000579492 /* LocalGeofencePoc.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = D62207F829DBDFC000579492;
+			packageReferences = (
+				D6AEAB0229DD3383004EE45A /* XCRemoteSwiftPackageReference "roam-ios" */,
+			);
 			productRefGroup = D622080229DBDFC000579492 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -287,9 +295,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NWHFDSWPGL;
+				DEVELOPMENT_TEAM = 7LCSPM3A63;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LocalGeofencePoc/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = Location;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = Location;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = Location;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -300,7 +311,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.roam.localGeofence.LocalGeofencePoc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roam.gaurdian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -315,9 +326,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NWHFDSWPGL;
+				DEVELOPMENT_TEAM = 7LCSPM3A63;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LocalGeofencePoc/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = Location;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = Location;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = Location;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -328,7 +342,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.roam.localGeofence.LocalGeofencePoc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roam.gaurdian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -358,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D6AEAB0229DD3383004EE45A /* XCRemoteSwiftPackageReference "roam-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/roam-ai/roam-ios";
+			requirement = {
+				kind = exactVersion;
+				version = 0.1.10;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D6AEAB0329DD3383004EE45A /* roam-ios */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6AEAB0229DD3383004EE45A /* XCRemoteSwiftPackageReference "roam-ios" */;
+			productName = "roam-ios";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D62207F929DBDFC000579492 /* Project object */;
 }
